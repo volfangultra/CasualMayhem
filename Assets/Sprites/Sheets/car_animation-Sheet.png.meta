@@ -113,7 +113,7 @@ TextureImporter:
         y: 0
         width: 880
         height: 520
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -131,11 +131,11 @@ TextureImporter:
       name: car_animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 879
+        x: 880
         y: 0
-        width: 1761
+        width: 880
         height: 520
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -153,11 +153,11 @@ TextureImporter:
       name: car_animation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1419
+        x: 1760
         y: 0
-        width: 142
-        height: 141
-      alignment: 9
+        width: 880
+        height: 520
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
