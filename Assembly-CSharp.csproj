@@ -64,7 +64,11 @@
     <Analyzer Include="D:\Unity\6000.0.31f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BackgroundController.cs" />
+    <Compile Include="Assets\Scripts\Pigeon.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\CameraFollowPLayer.cs" />
+    <Compile Include="Assets\Scripts\FireHydrant.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
