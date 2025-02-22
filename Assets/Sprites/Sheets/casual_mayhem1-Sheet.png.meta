@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 67e5969867800734c8d271c7f34aea3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6353268394375372366
+    second: casual_mayhem1-Sheet_0
+  - first:
+      213: -8169929248914602022
+    second: casual_mayhem1-Sheet_1
+  - first:
+      213: -6279797392359934144
+    second: casual_mayhem1-Sheet_2
+  - first:
+      213: 3300413937686341577
+    second: casual_mayhem1-Sheet_3
+  - first:
+      213: -7276886052769875446
+    second: casual_mayhem1-Sheet_4
+  - first:
+      213: 3605809617337128250
+    second: casual_mayhem1-Sheet_5
+  - first:
+      213: -6364396572563832090
+    second: casual_mayhem1-Sheet_6
+  - first:
+      213: 7578901319046078815
+    second: casual_mayhem1-Sheet_7
+  - first:
+      213: 769940013205061235
+    second: casual_mayhem1-Sheet_8
+  - first:
+      213: -1451164308737451084
+    second: casual_mayhem1-Sheet_9
+  - first:
+      213: 1513118547997384029
+    second: casual_mayhem1-Sheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ed57191f75b2850800000000000000
+      internalID: 6353268394375372366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad70f5e52a49e9e80800000000000000
+      internalID: -8169929248914602022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04736fe1b8da9d8a0800000000000000
+      internalID: -6279797392359934144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7ea8f6dfc6dcd20800000000000000
+      internalID: 3300413937686341577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a38a980be430b90800000000000000
+      internalID: -7276886052769875446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3511191eb86a0230800000000000000
+      internalID: 3605809617337128250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e28e9a890f1da7a0800000000000000
+      internalID: -6364396572563832090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_mayhem1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 0
+        width: 1110
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f512b7d489aad2960800000000000000
+      internalID: 7578901319046078815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 37054308ce29b6e40b0f2f95ad2eb6f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      casual_mayhem1-Sheet_0: 6353268394375372366
+      casual_mayhem1-Sheet_1: -8169929248914602022
+      casual_mayhem1-Sheet_10: 1513118547997384029
+      casual_mayhem1-Sheet_2: -6279797392359934144
+      casual_mayhem1-Sheet_3: 3300413937686341577
+      casual_mayhem1-Sheet_4: -7276886052769875446
+      casual_mayhem1-Sheet_5: 3605809617337128250
+      casual_mayhem1-Sheet_6: -6364396572563832090
+      casual_mayhem1-Sheet_7: 7578901319046078815
+      casual_mayhem1-Sheet_8: 769940013205061235
+      casual_mayhem1-Sheet_9: -1451164308737451084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
