@@ -154,10 +154,10 @@ RectTransform:
   - {fileID: 1328506757}
   m_Father: {fileID: 1655044442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.47, y: 10.726}
-  m_SizeDelta: {x: 2090.42, y: 1330.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.0009765625}
+  m_SizeDelta: {x: 0, y: -0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361886446
 MonoBehaviour:
@@ -358,7 +358,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 114.148834, y: 114.148834, z: 114.148834}
+  m_LocalScale: {x: 79.90418, y: 79.90418, z: 79.90418}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361886445}

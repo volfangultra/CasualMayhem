@@ -34,6 +34,8 @@ public class FireHydrant : MonoBehaviour
         if (waterSprite != null)
         {
             sr.sprite = waterSprite;
+            if(direction == Vector2.right)
+                sr.flipX = true;            
         }
         else
         {
