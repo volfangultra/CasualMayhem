@@ -168,5 +168,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterSpeed: 5
-  waterLifetime: 2
-  waterSprite: {fileID: -6763124759528667051, guid: 2886aed0e0187ee47b2c1f4dc8c36919, type: 3}
+  waterPrefab: {fileID: 9109489620500319096, guid: a3feff6ac2c6e8b45b3e58138317aa73, type: 3}

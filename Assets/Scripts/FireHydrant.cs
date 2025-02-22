@@ -4,8 +4,7 @@ using UnityEngine;
 public class FireHydrant : MonoBehaviour
 {
     public float waterSpeed = 5f;
-    public float waterLifetime = 2f;
-    public Sprite waterSprite;
+    public GameObject waterPrefab;
 
     void Start()
     {
@@ -26,33 +25,27 @@ public class FireHydrant : MonoBehaviour
 
     void SpawnWater(Vector2 direction)
     {
-        // Create a new GameObject for water
-        GameObject water = new GameObject("Water");
-
-        // Add SpriteRenderer and assign the user-defined sprite
-        SpriteRenderer sr = water.AddComponent<SpriteRenderer>();
-        if (waterSprite != null)
+        if (waterPrefab == null)
         {
-            sr.sprite = waterSprite;
-            if(direction == Vector2.right)
-                sr.flipX = true;            
+            Debug.LogWarning("Water prefab not assigned!");
+            return;
         }
-        else
+
+        // Instantiate the water prefab
+        GameObject water = Instantiate(waterPrefab, transform.position + (Vector3)(direction * 7f), Quaternion.identity);
+
+        // Flip the sprite if moving right
+        SpriteRenderer sprite = water.GetComponent<SpriteRenderer>();
+        if (sprite != null && direction == Vector2.right)
         {
-            Debug.LogWarning("Water sprite not assigned!");
+            sprite.flipX = true;
         }
-        sr.sortingLayerName = "Ground"; // Adjust sorting layer as needed
 
-        // Add Rigidbody2D for movement
-        Rigidbody2D rb = water.AddComponent<Rigidbody2D>();
-        rb.gravityScale = 0; // No gravity
-        rb.linearVelocity = direction * waterSpeed;
-
-        // Set position slightly offset so it's not inside the hydrant
-        water.transform.position = transform.position + new Vector3(direction.x * 0.5f, 0, 0);
-        water.transform.localScale = new Vector3(0.5f, 0.5f, 1); // Adjust size
-
-        // Destroy after some time
-        Destroy(water, waterLifetime);
+        // Set movement direction inside the prefab script
+        WaterProjectile waterScript = water.GetComponent<WaterProjectile>();
+        if (waterScript != null)
+        {
+            waterScript.SetDirection(direction);
+        }
     }
 }
