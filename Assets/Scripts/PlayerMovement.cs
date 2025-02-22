@@ -1,6 +1,7 @@
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
             RestartGame();
         }
+
         input = Input.GetAxisRaw("Horizontal");
 
         // Flip sprite based on movement direction
@@ -45,41 +47,37 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
 
         // Jump logic
-        //if (Input.GetButtonDown("Jump") && isGrounded && !isDucking) dont allow jump ducking
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded) // Prevent jumping while ducking
         {
             playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, jumpForce);
         }
 
         // Duck logic
-        //if (Input.GetAxisRaw("Vertical") < 0 && isGrounded) dont allow ducking in air
-        if (Input.GetAxisRaw("Vertical") < 0)
+        if (Input.GetAxisRaw("Vertical") < 0) // Only allow ducking on the ground
         {
-            isDucking = true;
-            //animator.SetBool("isDucking", true);
-            normalCollider.enabled = false;
-            duckCollider.enabled = true;
+            if (!isDucking) // Only trigger once
+            {
+                isDucking = true;
+                animator.SetTrigger("Duck"); // Use a trigger to start the animation once
+                normalCollider.enabled = false;
+                duckCollider.enabled = true;
+            }
         }
-        else
+        else if (isDucking) // When releasing down key, finish animation before exiting duck state
         {
             isDucking = false;
-            //animator.SetBool("isDucking", false);
             normalCollider.enabled = true;
             duckCollider.enabled = false;
+            animator.Play("Idle");
         }
 
         // Set animator parameter for walking (only if not ducking)
         animator.SetBool("isWalking", input != 0 && !isDucking);
     }
 
+
     void FixedUpdate()
     {
-        // Allow movement only if not ducking
-        // if (!isDucking) //dont allow moving when ducking
-        // {
-        //     playerRb.linearVelocity = new Vector2(input * speed, playerRb.linearVelocity.y);
-        // }
-
         playerRb.linearVelocity = new Vector2(input * speed, playerRb.linearVelocity.y);
     }
 
@@ -103,4 +101,12 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 1; // Resume time
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload scene
     }
+    IEnumerator FinishDucking()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length); // Wait for animation to finish
+
+        Debug.Log("Finishing");
+    }
+
 }
+
