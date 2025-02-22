@@ -18,4 +18,13 @@ public class ShurikenMovement : MonoBehaviour
         transform.Rotate(0, 0, rotationSpeed * Time.fixedDeltaTime);
 
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.CompareTag("Ground")) // Make sure the ground has the tag "Ground"
+        {
+            Destroy(gameObject); // Destroy the meteor when it hits the ground
+        }
+    }
 }

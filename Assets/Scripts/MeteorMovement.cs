@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MeteorMovement : MonoBehaviour
@@ -10,9 +9,16 @@ public class MeteorMovement : MonoBehaviour
     {
         // Move pigeon to the left
         transform.position += Vector3.left * speed + Vector3.down * speed;
-        if(transform.position.y < -7)
-            Destroy(gameObject);
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.CompareTag("Ground")) // Make sure the ground has the tag "Ground"
+        {
+            Destroy(gameObject); // Destroy the meteor when it hits the ground
+        }
     }
 
 }
