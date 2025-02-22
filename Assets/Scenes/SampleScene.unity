@@ -1819,6 +1819,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &67528968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 402.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 336.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000569598722291622, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_Name
+      value: Meteor (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
 --- !u!1 &95890812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,6 +4061,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &227564608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 381.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 320.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000569598722291622, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_Name
+      value: Meteor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
 --- !u!1 &233470576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4483,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &256115230
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 428.30002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 318.80792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184379590555768301, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000569598722291622, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
+      propertyPath: m_Name
+      value: Meteor (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2cc30c33867efc4fa0080bded0f8d18, type: 3}
 --- !u!1 &259923468
 GameObject:
   m_ObjectHideFlags: 0
@@ -45637,3 +45808,6 @@ SceneRoots:
   - {fileID: 526043383}
   - {fileID: 813395931}
   - {fileID: 768601117}
+  - {fileID: 227564608}
+  - {fileID: 67528968}
+  - {fileID: 256115230}
