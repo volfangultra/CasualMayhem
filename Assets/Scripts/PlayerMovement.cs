@@ -1,28 +1,36 @@
-using UnityEditor.Rendering.LookDev;
+ using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public float speed;
-    private float input;
     public SpriteRenderer spriteRenderer;
     public float jumpForce;
-    private Animator animator;
-
+    public float speed;
     public LayerMask groundLayer;
     public Transform feetPosition;
+    public GameObject gameOverScreen;
+
     public float groundCheckCircle;
     private bool isGrounded;
+    private Animator animator;
+    private float input;
+    private bool isGameOver = false;
 
     void Start()
     {
         // Get the Animator component
         animator = GetComponent<Animator>();
+        gameOverScreen.SetActive(false);
     }
 
     void Update()
     {
+        if (isGameOver && Input.GetKeyDown(KeyCode.Return)) // Enter key
+        {
+            RestartGame();
+        }
         input = Input.GetAxisRaw("Horizontal");
         // Flip sprite based on movement direction
         if (input < 0)
@@ -47,5 +55,26 @@ public class PlayerMovement : MonoBehaviour
     {
         // Only modify x velocity, keeping y velocity unchanged
         playerRb.linearVelocity = new Vector2(input * speed, playerRb.linearVelocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D other) // For 2D Collisions
+    {
+        if (other.CompareTag("CanKill")) // Make sure your obstacle has the "Obstacle" tag
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        gameOverScreen.SetActive(true); // Show Game Over UI
+        Time.timeScale = 0; // Pause the game
+        isGameOver = true;
+    }
+
+    void RestartGame()
+    {
+        Time.timeScale = 1; // Resume time
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload scene
     }
 }
