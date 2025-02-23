@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform feetPosition;
     public GameObject gameOverScreen;
     public GameObject gameEndingScreen;
+    public GameObject gameStartScreen;
 
     public float groundCheckCircle;
     private bool isGrounded;
@@ -22,12 +23,16 @@ public class PlayerMovement : MonoBehaviour
     private bool isDucking;
     public Collider2D normalCollider;
     public Collider2D duckCollider;
+    private bool isGameStart = false;
 
     void Start()
     {
+        Time.timeScale = 0; // Pause the game
         animator = GetComponent<Animator>();
         gameOverScreen.SetActive(false);
         gameEndingScreen.SetActive(false);
+        gameStartScreen.SetActive(true);
+        isGameStart = true;
 
     }
 
@@ -37,7 +42,9 @@ public class PlayerMovement : MonoBehaviour
         {
             RestartGame();
         }
-
+        if(  isGameStart && Input.GetKeyDown(KeyCode.Return) ){
+            GameStart();
+        }
         input = Input.GetAxisRaw("Horizontal");
 
         // Flip sprite based on movement direction
@@ -116,6 +123,12 @@ public class PlayerMovement : MonoBehaviour
         isGameOver = true;
     }
 
+    void GameStart()
+    {
+        Time.timeScale = 1; 
+        gameStartScreen.SetActive(false); // Show Game Over UI
+        isGameStart = false;
+    }
     IEnumerator FinishDucking()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length); // Wait for animation to finish
