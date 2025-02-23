@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public Transform feetPosition;
     public GameObject gameOverScreen;
+    public GameObject gameEndingScreen;
 
     public float groundCheckCircle;
     private bool isGrounded;
@@ -26,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         gameOverScreen.SetActive(false);
+        gameEndingScreen.SetActive(false);
+
     }
 
     void Update()
@@ -87,6 +90,10 @@ public class PlayerMovement : MonoBehaviour
         {
             GameOver();
         }
+        if (other.CompareTag("GameEnding")) // Make sure your obstacle has the "Obstacle" tag
+        {
+            GameEnding();
+        }
     }
 
     void GameOver()
@@ -101,6 +108,14 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 1; // Resume time
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload scene
     }
+
+    void GameEnding()
+    {
+        gameEndingScreen.SetActive(true); // Show Game Over UI
+        Time.timeScale = 0; // Pause the game
+        isGameOver = true;
+    }
+
     IEnumerator FinishDucking()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length); // Wait for animation to finish
