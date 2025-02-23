@@ -4,6 +4,7 @@ using UnityEngine;
 public class FireHydrant : MonoBehaviour
 {
     public float waterSpeed = 5f;
+    public float duration = 3f;
     public GameObject waterPrefab;
 
     void Start()
@@ -15,7 +16,7 @@ public class FireHydrant : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3f); // Wait for 3 seconds
+            yield return new WaitForSeconds(duration); // Wait for 3 seconds
 
             // Spawn water on both sides
             SpawnWater(Vector2.left);
